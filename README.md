@@ -30,10 +30,13 @@ compared to all previous works. While both FAD and KLD scores are both slightly 
 <img src="figures/video-to-audio_gen.png" alt="v2a quantative" width="400"/> <img src="figures/v2a_perceptual.png" alt="v2a perceptual" width="300"/>
 
 ### Audio-Visual Retrieval
-In this task, we assess the learned representations of VAB model for both audio-to-visual retrieval and visual-to-audio retrieval. We first fine-tune
+We assess the learned representations of VAB model for both audio-to-visual retrieval and visual-to-audio retrieval. We first fine-tune
 the VAB model using the contrastive loss, employing the same training dataset utilized during the pre-training phase. To evaluate the retrieval performance, we adopt the CAVMAE (Gong et al., 2022b) methodology for conducting retrieval on audio-visual samples sourced from the AudioSet and VGGSound evaluation set. Furthermore, we extend our evaluation to include zero-shot retrieval on MSR-VTT (Xu et al., 2016) test set. 
 
 
-
-
 ### Classification
+We evaluate the quality of VAB representations in the context of audio-visual event classification task. To accomplish this,
+we employ the contrastive VAB model and fine-tune it on three distinct datasets: 1) AudioSet-20K, 2) AudioSet-2M, and 3) VGGSound.
+
+
+
