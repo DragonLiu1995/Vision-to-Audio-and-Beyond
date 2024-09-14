@@ -6,18 +6,18 @@ In this work, we introduce a novel framework called Vision to Audio and Beyond (
 working with raw video frames and audio data, VAB performs representation learning and generative modeling within latent spaces. VAB uses a pre-trained audio tokenizer and an image encoder to obtain audio tokens and visual features, respectively. It then performs the pretraining task of visual-conditioned masked audio token prediction. This training strategy enables the model to engage in contextual learning and simultaneous video-to-audio generation. After the pre-training phase, VAB employs the iterativedecoding approach to rapidly generate audio tokens conditioned on visual features. Since VAB is
 a unified model, its backbone can be fine-tuned for various audio-visual downstream tasks. Our experiments showcase the efficiency of VAB in producing high-quality audio from video, and its capability to acquire semantic audio-visual features, leading to competitive results in audio-visual retrieval and classification.
 
-<img src="vab_applications.png" alt="vab applications" width="600"/>
+<img src="figures/vab_applications.png" alt="vab applications" width="600"/>
 
 ## Method
 
 ### Stage 1: Pretraining Phase
 VAB first converts raw audio and visual signals into latent spaces through the utilization of a pre-trained audio neural codec and image encoder. VAB utilizes self-supervised pre-training stage centered around masked audio token prediction conditioned on visual features. At this stage VAB establishes its representation and learns to generate audio for video. 
-<img src="vab_pretrain.png" alt="vab pretrain" width="500"/>
+<img src="figures/vab_pretrain.png" alt="vab pretrain" width="500"/>
 
 ### Stage 2: Task-specific Finetuning Stage
 After VAB pre-training, the learned representation is amenable for adaptation to a variety of audio-visual tasks through fine-tuning. We therefore proceed to fine-tune the first N1 modal-specific layers of the VAB model using the contrastive loss, aiming to align audio and visual modalities for retrieval tasks. Upon contrastive finetuning, further adaptation could be applied to additional tasks, for example, classification.
 
-<img src="vab_finetune.png" alt="vab pretrain" width="800"/>
+<img src="figures/vab_finetune.png" alt="vab pretrain" width="800"/>
 
 
 ## Experimnets and Results
