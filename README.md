@@ -1,5 +1,5 @@
 # Vision-to-Audio-and-Beyond
-ICML 2024 paper "From Vision to Audio and Beyond: A Unified Model for Audio-Visual Representation and Generation" [paper](https://proceedings.mlr.press/v235/su24b.html)
+ICML 2024 paper "From Vision to Audio and Beyond: A Unified Model for Audio-Visual Representation and Generation" ([paper](https://proceedings.mlr.press/v235/su24b.html))
 
 ## Summary
 In this work, we introduce a novel framework called Vision to Audio and Beyond (VAB) to bridge the gap between audio-visual representation learning and vision-to-audio generation. The key approach of VAB is that rather than
@@ -11,3 +11,8 @@ a unified model, its backbone can be fine-tuned for various audio-visual downstr
 ## Method
 
 ### Stage 1: Pretraining Phase
+VAB first converts raw audio and visual signals into latent spaces through the utilization of a pre-trained audio neural codec and image encoder. VAB utilizes self-supervised pre-training stage centered around masked audio token prediction conditioned on visual features. At this stage VAB establishes its representation and learns to generate audio for video. 
+<img src="vab_pretrain.png" alt="vab pretrain" width="500"/>
+
+### Stage 2: Task-specific Finetuning Stage
+<img src="vab_pretrain.png" alt="vab pretrain" width="500"/>
