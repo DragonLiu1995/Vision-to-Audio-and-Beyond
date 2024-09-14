@@ -44,5 +44,10 @@ we employ the contrastive VAB model and fine-tune it on three distinct datasets:
 To assess the generalization of the acquired audio representations, we further evaluate the pre-trained VAB model by transferring it to other speechonly or audio-only tasks outside its original domain.
 conduct experiments on the Environmental Sound Classification (ESC-50) (Piczak, 2015) and Speech Commands (SPCv1) (Warden, 2018) datasets. In these experiments, only the audio branch of VAB is fine-tuned.
 
-<img src="figures/audio_only_classification.png" alt="v2a quantative" width="600"/> 
+<img src="figures/audio_only_classification.png" alt="v2a quantative" width="400"/> 
+
+
+For more experiments and ablation studies, please refer to our paper. For more questions regarding the paper and implementations, Please reach out to the email at xl1995@uw.edu. If you find our research useful for your works, please cite our paper.
+
+
 
