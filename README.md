@@ -1,5 +1,5 @@
 # Vision-to-Audio-and-Beyond
-ICML 2024 paper "From Vision to Audio and Beyond: A Unified Model for Audio-Visual Representation and Generation" ([paper](https://proceedings.mlr.press/v235/su24b.html))
+ICML 2024 Poster paper "From Vision to Audio and Beyond: A Unified Model for Audio-Visual Representation and Generation" ([paper](https://proceedings.mlr.press/v235/su24b.html)) ([poster](https://icml.cc/media/PosterPDFs/ICML%202024/33302.png))
 
 ## Summary
 In this work, we introduce a novel framework called Vision to Audio and Beyond (VAB) to bridge the gap between audio-visual representation learning and vision-to-audio generation. The key approach of VAB is that rather than
