@@ -47,7 +47,29 @@ conduct experiments on the Environmental Sound Classification (ESC-50) (Piczak, 
 <img src="figures/audio_only_classification.png" alt="v2a quantative" width="400"/> 
 
 
-For more experiments and ablation studies, please refer to our paper. For more questions regarding the paper and implementations, Please reach out to the email at xl1995@uw.edu. If you find our research useful for your works, please cite our paper.
+For more experiments and ablation studies, please refer to our paper. For more questions regarding the paper and implementations, Please reach out to the email at xl1995@uw.edu. 
 
+## Citation
+
+If you find our research useful for your works, please cite the [From Vision to Audio and Beyond: A Unified Model for Audio-Visual
+Representation and Generation](https://raw.githubusercontent.com/mlresearch/v235/main/assets/su24b/su24b.pdf)
+```
+
+@InProceedings{pmlr-v235-su24b,
+  title = 	 {From Vision to Audio and Beyond: A Unified Model for Audio-Visual Representation and Generation},
+  author =       {Su, Kun and Liu, Xiulong and Shlizerman, Eli},
+  booktitle = 	 {Proceedings of the 41st International Conference on Machine Learning},
+  pages = 	 {46804--46822},
+  year = 	 {2024},
+  editor = 	 {Salakhutdinov, Ruslan and Kolter, Zico and Heller, Katherine and Weller, Adrian and Oliver, Nuria and Scarlett, Jonathan and Berkenkamp, Felix},
+  volume = 	 {235},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {21--27 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://raw.githubusercontent.com/mlresearch/v235/main/assets/su24b/su24b.pdf},
+  url = 	 {https://proceedings.mlr.press/v235/su24b.html},
+}
+
+```
 
 
