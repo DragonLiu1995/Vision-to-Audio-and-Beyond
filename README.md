@@ -17,4 +17,4 @@ VAB first converts raw audio and visual signals into latent spaces through the u
 ### Stage 2: Task-specific Finetuning Stage
 After VAB pre-training, the learned representation is amenable for adaptation to a variety of audio-visual tasks through fine-tuning. We therefore proceed to fine-tune the
 first N1 modal-specific layers of the VAB model using the contrastive loss, aiming to align audio and visual modalities for retrieval tasks. Upon contrastive finetuning, further adaptation could be applied to additional tasks, for example, classification.
-<img src="vab_pretrain.png" alt="vab pretrain" width="500"/>
+<img src="vab_finetune.png" alt="vab pretrain" width="500"/>
