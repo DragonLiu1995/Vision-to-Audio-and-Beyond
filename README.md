@@ -22,10 +22,18 @@ After VAB pre-training, the learned representation is amenable for adaptation to
 
 ## Experimnets and Results
 
-### Video-to-Audio Generation
+### Zero-shot Video-to-Audio Generation
+We evaluated video-to-audio generation using VGGSound test set, comparing our models against existing baselines: SpecVQGAN (Iashin & Rahtu, 2021), IM2WAV (Sheffer & Adi,
+2023), Diff-Foley (Luo et al., 2023), and FoleyGen (Mei et al., 2023). With the masked audio tokens prediction task and iterative-decoding approach, VAB achieved significantly, of order of magnitude, faster inference speeds
+compared to all previous works. While both FAD and KLD scores are both slightly lower than the best approaches, VAB achieves a more balanced performance in both metrics.
 
+<img src="figures/video-to-audio_gen.png" alt="v2a quantative" width="400"/> <img src="figures/v2a_perceptual.png" alt="v2a perceptual" width="300"/>
 
 ### Audio-Visual Retrieval
+In this task, we assess the learned representations of VAB model for both audio-to-visual retrieval and visual-to-audio retrieval. We first fine-tune
+the VAB model using the contrastive loss, employing the same training dataset utilized during the pre-training phase. To evaluate the retrieval performance, we adopt the CAVMAE (Gong et al., 2022b) methodology for conducting retrieval on audio-visual samples sourced from the AudioSet and VGGSound evaluation set. Furthermore, we extend our evaluation to include zero-shot retrieval on MSR-VTT (Xu et al., 2016) test set. 
+
+
 
 
 ### Classification
