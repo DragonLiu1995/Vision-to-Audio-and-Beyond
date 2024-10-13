@@ -46,6 +46,8 @@ conduct experiments on the Environmental Sound Classification (ESC-50) (Piczak, 
 
 <img src="figures/audio_only_classification.png" alt="v2a quantative" width="400"/> 
 
+### Video-to-Audio Generation Samples
+We provide 10-second long video-to-audio generation samples for VGGSound test split, resulting a total of 15546 audio waveforms. You can access and download from [here](https://drive.google.com/file/d/1024WcMrepsidyI8O0B6uNXbs8fJ4pD2K/view?usp=sharing)
 
 For more experiments and ablation studies, please refer to our paper. For more questions regarding the paper and implementations, Please reach out to the email at xl1995@uw.edu. 
 
